@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
+    <link href="./style.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="image-container">
+    </div>
+        
+    <div class="text-section">
+
+        <div class="section1">
+            <p>You need something like this in your life to help you realise your deepest dreams.
+                Sign up <em>now</em> to get started and date me.
+            </p>
+            <p>You <em>know</em> you want to!</p>
+        </div>
+
+        <div class="section2">
+            <p>Let's do this!</p>
+            
+            <form>
+                <div class="section2-left">
+                    <label for="first-name">FIRST NAME</label>
+                    <input id="first-name" name="first-name" type="text"/>
+
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email"/>
+
+                    <label for="password">PASSWORD</label>
+                    <input id="password" name="password" type="password"/>
+                </div>
+
+                <div class="section2-right">
+                    <label for="last-name">LAST NAME</label>
+                    <input id="last-name" name="last-name" type="text"/>
+
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input id="phone-number" name="phone-number" type="tel"/>
+
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input id="confirm-password" name="password" type="password"/>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="section3">
+            <button class="account-btn">Create Account</button>
+            <p>Already have an account? <button class="login-btn">Log in</button></p>
+        </div>
+
+    </div>
 </body>
 </html>
