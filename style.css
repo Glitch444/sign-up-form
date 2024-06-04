@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "norse-bold";
+    src: url("./sign-up-form-fonts/norse-bold-webfont.woff2") format("woff2"),
+    url("./sign-up-form-fonts/norse-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,15 +35,37 @@ body {
     background-image: url("./cat-1920x2560.jpg");
     background-size: cover;  
     background-repeat: none;
-    background-position: 60% 0
+    background-position: 60% 0;
+    position: relative;    
 }
 
+#logo {
+    z-index: 1;
+    width: 90px;
+    height: auto;
+    position: absolute;
+    right: 37.5%;
+    top: 35.25%;  
+}
+
+#logo-text {
+    font-family: "norse-bold", sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
 
 .text-section {
-    border: 1ps solid white;
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
-    flex:1; 
+    flex: 1; 
 } 
 
 .section1, 
@@ -169,7 +199,9 @@ input[type="email"]:invalid {
     .text-section {
         width: 100vw;
     }
-   
+    #logo {
+        
+    }
 
 
 }
